@@ -6,10 +6,14 @@ from time import time
 class Blockchain:
 
     def __init__(self):
+        """ Cria uma lista de blocos
+        cria o bloco genesis (primeiro da cadeia)
+        """
         self.blocks = []
         self.set_genesis_block()
 
     def set_genesis_block(self):
+        """Gera o bloco gênesis."""
         transaction = '$1000\t De: Satoshi\t -> --\t'
         timestamp = datetime.utcnow().timestamp()
         prev_hash = '000000'
@@ -38,7 +42,7 @@ class Blockchain:
         return self.blocks[-1]
 
     def is_hash_valid(self, hash):
-        return hash.startswith('0000')
+        return hash.startswith('000000')
 
     def add_new_block(self, transaction):
         index = len(self.blocks)
