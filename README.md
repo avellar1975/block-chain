@@ -10,6 +10,7 @@ SHA-2 é um conjunto de funções hash criptográficas projetadas pela NSA (Agê
 * Instalar o npm
 * Instalar o Truffle ```sudo npm install -g truffle```
 * Criar uma pasta contract
-* Dentro da pasta iniciar um projeto com o comando ```truffle init```
-* Instalar o Ganache
+* Dentro da pasta iniciar um projeto com o comando ```truffle unbox metacoin```
+* Instalar o Ganache - https://trufflesuite.com/docs/ganache/
+* Configurar o arquivo truffle-config descomentando a parte de network
 
